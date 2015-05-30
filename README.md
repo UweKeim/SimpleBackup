@@ -9,8 +9,8 @@ A Windows Explorer Context Menu extension to backup and restore folders to tempo
 For testing purposes of our [CMS](http://www.zeta-producer.com) I often do the following steps:
 
 1. Copy a whole folder from somewhere onto my local PC.
-1. Do some (modifying) operations on this folder.
-1. Delete the folder.
+1. Do some (modifying) operations on this folder (during my tests).
+1. Delete the folder (after the tests).
 1. Start from item 1.
 
 To simplify steps 3. and 4., I developed this Simple Backup extensions.
