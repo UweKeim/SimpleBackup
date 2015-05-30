@@ -8,6 +8,7 @@ Deploy/
 Source/TestConsole/Bin/
 Source/TestConsole2/Bin/
 Source/UnitTests/Bin/
+Source/Main/bin/
 
 sb.vshost.exe
 sb.vshost.exe.manifest
