@@ -30,4 +30,4 @@ To uninstall, go to Windows Control Panel and select "Simple Backup".
 
 ## History
 
-  * *2009-11-25* - First release to GitHub.
+  * *2015-05-30* - First release to GitHub.
