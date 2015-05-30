@@ -6,7 +6,7 @@ A Windows Explorer Context Menu extension to backup and restore folders to tempo
 
 ## Introduction
 
-For testing purposes I often do the following steps:
+For testing purposes of our [CMS](http://www.zeta-producer.com) I often do the following steps:
 
 1. Copy a whole folder from somewhere onto my local PC.
 1. Do some (modifying) operations on this folder.
