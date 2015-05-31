@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -8,7 +7,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Simple Backup")]
 [assembly: AssemblyDescription("Windows Explorer Context Menu extension to backup and restore folders to temporary storage")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("www.zeta-producer.com")]
+[assembly: AssemblyCompany("https://github.com/UweKeim/SimpleBackup")]
 [assembly: AssemblyProduct("Simple Backup")]
 [assembly: AssemblyCopyright("Copyright © 2015 Zeta Software GmbH")]
 [assembly: AssemblyTrademark("")]
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]

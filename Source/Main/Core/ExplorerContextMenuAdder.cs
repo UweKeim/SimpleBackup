@@ -43,7 +43,7 @@
                 key.SetValue(@"Publisher", "Zeta Software GmbH");
                 key.SetValue(@"DisplayIcon", Installer.InstallationExeFilePath);
                 key.SetValue(@"DisplayVersion", v.ToString(2));
-                key.SetValue(@"URLInfoAbout", "http://www.zeta-producer.com");
+                key.SetValue(@"URLInfoAbout", "https://github.com/UweKeim/SimpleBackup");
                 key.SetValue(@"Contact", "info@zeta-producer.com");
                 key.SetValue(@"InstallDate", DateTime.Now.ToString(@"yyyyMMdd"));
                 key.SetValue(@"UninstallString", string.Format(@"""{0}"" -u", Installer.InstallationExeFilePath));
