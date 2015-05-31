@@ -4,6 +4,8 @@ A Windows Explorer Context Menu extension to backup and restore folders to tempo
 
 [![Build state](https://travis-ci.org/UweKeim/SimpleBackup.svg?branch=master)](https://travis-ci.org/UweKeim/SimpleBackup "Travis CI build status")
 
+![Explorer Context Menu](http://i.imgur.com/8QFdg8J.png)
+
 ## Introduction
 
 For testing purposes of our [CMS](http://www.zeta-producer.com) I often do the following steps:
