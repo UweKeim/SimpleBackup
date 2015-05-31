@@ -125,7 +125,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if exist "$(SolutionDir)..\Deploy\Build\sign-bin.cmd" (
+    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">if exist "$(SolutionDir)..\Deploy\Build\sign-bin.cmd" (
 "$(SolutionDir)..\Deploy\Build\sign-bin.cmd"
 )</PostBuildEvent>
   </PropertyGroup>
