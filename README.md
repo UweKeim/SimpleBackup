@@ -2,9 +2,7 @@
 
 A Windows Explorer Context Menu extension to backup and restore folders to temporary storage.
 
-<!--
 [![Build state](https://travis-ci.org/UweKeim/SimpleBackup.svg?branch=master)](https://travis-ci.org/UweKeim/SimpleBackup "Travis CI build status")
--->
 
 ![Explorer Context Menu](http://i.imgur.com/8QFdg8J.png)
 
