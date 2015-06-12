@@ -22,7 +22,7 @@
             var src = new DirectoryInfo(sourceFolderPath);
             var dst = new DirectoryInfo(Path.Combine(BackupStorageBaseFolderPath, MakeUnique(src)));
 
-            if (dst.Exists) dst.Delete(true);
+            if( dst.Exists)dst.Delete();
             dst.Create();
 
             CopyFilesRecursively(src, dst, cancelable);

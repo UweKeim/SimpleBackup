@@ -124,14 +124,9 @@
     <Content Include="bookmarks.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
-    <PostBuildEvent>if exist "$(SolutionDir)..\Deploy\Build\sign-bin.cmd" (
- "$(SolutionDir)..\Deploy\Build\sign-bin.cmd"
-)</PostBuildEvent>
-  </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>if exist "$(SolutionDir)..\Deploy\Build\sign-bin.cmd" (
-  "$(SolutionDir)..\Deploy\Build\sign-bin.cmd"
+    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">if exist "$(SolutionDir)..\Deploy\Build\sign-bin.cmd" (
+ "$(SolutionDir)..\Deploy\Build\sign-bin.cmd"
 )</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
