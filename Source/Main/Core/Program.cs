@@ -68,8 +68,7 @@
                     if (ErrorForm.IsErrorFormShowing)
                     {
                         Trace.TraceInformation(
-                            @"Error form already showing, not showing again. {0}",
-                            exception.Message);
+                            $@"Error form already showing, not showing again. {exception.Message}");
                     }
                     else
                     {
@@ -89,9 +88,7 @@
             }
             else
             {
-                Trace.TraceError(
-                    @"Already inside 'HandleException()', not entering again. {0}",
-                    exception.Message);
+                Trace.TraceError($@"Already inside 'HandleException()', not entering again. {exception.Message}");
             }
         }
     }

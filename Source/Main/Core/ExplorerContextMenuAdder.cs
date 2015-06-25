@@ -13,7 +13,7 @@
             key1.SetValue(null, "Backup - [Simple Backup]");
 
             var key2 = key1.CreateSubKey(@"command");
-            key2.SetValue(null, string.Format(@"""{0}"" -b ""%1""", Installer.InstallationExeFilePath));
+            key2.SetValue(null, $@"""{Installer.InstallationExeFilePath}"" -b ""%1""");
 
             key1.Close();
             key2.Close();
@@ -24,7 +24,7 @@
             key1.SetValue(null, "Restore - [Simple Backup]");
 
             key2 = key1.CreateSubKey(@"command");
-            key2.SetValue(null, string.Format(@"""{0}"" -r ""%1""", Installer.InstallationExeFilePath));
+            key2.SetValue(null, $@"""{Installer.InstallationExeFilePath}"" -r ""%1""");
 
             key1.Close();
             key2.Close();
@@ -46,7 +46,7 @@
                 key.SetValue(@"URLInfoAbout", "https://github.com/UweKeim/SimpleBackup");
                 key.SetValue(@"Contact", "info@zeta-producer.com");
                 key.SetValue(@"InstallDate", DateTime.Now.ToString(@"yyyyMMdd"));
-                key.SetValue(@"UninstallString", string.Format(@"""{0}"" -u", Installer.InstallationExeFilePath));
+                key.SetValue(@"UninstallString", $@"""{Installer.InstallationExeFilePath}"" -u");
             }
         }
 

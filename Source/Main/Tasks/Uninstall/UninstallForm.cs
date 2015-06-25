@@ -22,7 +22,7 @@
             processingBackgroundWorker.RunWorkerAsync();
         }
 
-        private void processingBackgroundWorker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        private void processingBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             Uninstaller.Uninstall(
                 userState => processingBackgroundWorker.CancellationPending ? CancelMode.Cancel : CancelMode.Continue);

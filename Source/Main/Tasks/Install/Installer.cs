@@ -7,29 +7,14 @@
 
     internal static class Installer
     {
-        public static string InstallationFolderPath
-        {
-            get
-            {
-                return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-                    @"Simple Backup");
-            }
-        }
+        public static string InstallationFolderPath =>
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Simple Backup");
 
-        public static string InstallationExeFilePath
-        {
-            get { return Path.Combine(InstallationFolderPath, ExeName); }
-        }
+        public static string InstallationExeFilePath => Path.Combine(InstallationFolderPath, ExeName);
 
-        public static string ExeName
-        {
-            get { return Path.GetFileName(Assembly.GetEntryAssembly().Location); }
-        }
+        private static string ExeName => Path.GetFileName(Assembly.GetEntryAssembly().Location);
 
-        public static bool IsInstalled
-        {
-            get { return File.Exists(InstallationExeFilePath); }
-        }
+        public static bool IsInstalled => File.Exists(InstallationExeFilePath);
 
         public static void Install(
             Cancelable cancelable)

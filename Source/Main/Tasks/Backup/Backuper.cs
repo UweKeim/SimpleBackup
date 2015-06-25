@@ -7,10 +7,7 @@
 
     internal static class Backuper
     {
-        public static string BackupStorageBaseFolderPath
-        {
-            get { return Path.Combine(Installer.InstallationFolderPath, @"Backups"); }
-        }
+        public static string BackupStorageBaseFolderPath => Path.Combine(Installer.InstallationFolderPath, @"Backups");
 
         public static void Backup(string sourceFolderPath, Cancelable cancelable)
         {
@@ -30,7 +27,7 @@
 
         public static string MakeUnique(FileSystemInfo src)
         {
-            return string.Format(@"{0} ({1:X})", src.Name, src.FullName.GetHashCode());
+            return $@"{src.Name} ({src.FullName.GetHashCode():X})";
         }
 
         public static void CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target, Cancelable cancelable)
