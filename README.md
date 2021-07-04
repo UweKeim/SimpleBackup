@@ -1,4 +1,4 @@
-# Simple Backup [![Build state](https://travis-ci.org/UweKeim/SimpleBackup.svg?branch=master)](https://travis-ci.org/UweKeim/SimpleBackup "Travis CI build status")
+# Simple Backup <!--[![Build state](https://travis-ci.org/UweKeim/SimpleBackup.svg?branch=master)](https://travis-ci.org/UweKeim/SimpleBackup "Travis CI build status")-->
 
 A Windows Explorer Context Menu extension to backup and restore folders to temporary storage.
 
